@@ -1,0 +1,47 @@
+/****** RESET ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: white;
+}
+
+/****** UTILITIES ******/
+
+.flex{
+    display: flex;
+}
+
+.container-80{
+    width: 80%;
+}
+
+.ta-r{
+    text-align: right;
+}
+
+.br-5{
+    border-radius: 5px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+/****** HEADER ******/
+
+.main-header .header-nav{
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.main-header .header-nav .header-button{
+    padding: 5px;
+    display: inline-block;
+    background-color: gray;
+}
