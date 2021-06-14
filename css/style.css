@@ -19,6 +19,7 @@ body{
 
 .container-80{
     width: 80%;
+    margin: 0 auto;
 }
 
 .ta-r{
@@ -36,12 +37,47 @@ body{
 /****** HEADER ******/
 
 .main-header .header-nav{
-    margin: 20px 10px;
+    height: 50px;
+    margin: 0 10px;
     cursor: pointer;
+    justify-content:  flex-end;
+    align-items: center;
 }
 
 .main-header .header-nav .header-button{
     padding: 5px;
     display: inline-block;
     background-color: gray;
+}
+
+
+/****** MAIN ******/
+
+main{
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+}
+
+main .container-80.flex{
+    flex-wrap: wrap;
+}
+
+main .webcam.flex{
+    padding: 10px 5px;
+    flex-basis: 20%;
+    align-items: flex-end;
+    position: relative;
+}
+
+main .webcam.flex img{
+    height: 190px;
+}
+
+main .webcam .user{
+    border-top-right-radius: 5px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
 }
