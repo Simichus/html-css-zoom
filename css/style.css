@@ -56,6 +56,12 @@ body{
     padding: 5px;
     display: inline-block;
     background-color: gray;
+    transition: background-color .5s, color .5s;
+}
+
+.main-header .header-nav .header-button:hover{
+    background-color: lightgray;
+    color: black;
 }
 
 
@@ -68,6 +74,7 @@ main{
 
 main .container-80.flex{
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 main .webcam.flex{
