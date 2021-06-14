@@ -17,6 +17,10 @@ body{
     display: flex;
 }
 
+.fdir-col{
+    flex-direction: column;
+}
+
 .container-80{
     width: 80%;
     margin: 0 auto;
@@ -32,6 +36,10 @@ body{
 
 .mr-10{
     margin-right: 10px;
+}
+
+.green{
+    color: greenyellow;
 }
 
 /****** HEADER ******/
@@ -54,7 +62,7 @@ body{
 /****** MAIN ******/
 
 main{
-    height: calc(100vh - 130px);
+    height: calc(100vh - 150px);
     overflow-y: scroll;
 }
 
@@ -80,4 +88,62 @@ main .webcam .user{
     position: absolute;
     bottom: 5%;
     left: 0%;
+}
+
+
+/****** FOOTER ******/
+
+footer{
+    background-color: rgb(59, 59, 59);
+    height: 100px;
+}
+
+footer .buttons-section{
+    height: 100%;
+    border: 1px solid white;
+}
+
+footer .buttons-section:nth-child(2){
+    flex-grow: 1;
+
+    justify-content: center;
+}
+
+footer .buttons-section .functional-button{
+    margin: 5px 5px;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .buttons-section .functional-button .button-icon{
+    font-size: 30px;
+}
+
+footer .buttons-section .functional-button:hover{
+    background-color: #888;
+}
+
+footer .buttons-section .functional-button .menu-opener{
+    padding: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer .buttons-section .functional-button .menu-opener:hover{
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer .buttons-section .end-meeting{
+    height: 100%;
+    width: 200px;
+    color: rgb(161, 0, 0);
+    font-size: 24px;
+    background-color: #999;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
 }
